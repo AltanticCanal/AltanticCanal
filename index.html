@@ -5,6 +5,26 @@
     <title>Altantic Canal</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Dark mode */
+        body.dark{
+            background-color:#121212;
+            color:#f5f5f5;
+        }
+        body.dark a{color:#81c2ff;}
+        body.dark header, body.dark nav, body.dark footer{
+            background-color:#1e1e1e;
+        }
+        .dark-toggle{
+            margin-left:1rem;
+            display:inline-flex;
+            align-items:center;
+            gap:0.3rem;
+            font-size:0.9rem;
+        }
+    </style>
+
 </head>
 <body>
     <header>
@@ -43,12 +63,12 @@
             <!-- Tab content -->
             <div class="tab-content" id="content1">
                 <h2>Connecting Global Buyers & Suppliers</h2>
-                <p>We specialize in linking raw material suppliers with qualified buyers worldwide, ensuring seamless transactions through strict purchasing standards and verified sales processes. Our platform bridges the gap between international and domestic markets, offering suppliers expanded reach and buyers reliable sourcing—all with transparency and efficiency.</p>
+                <p>We specialize in linking raw‑material suppliers with qualified buyers. Our platform bridges the gap between international and domestic markets, giving suppliers expanded reach and buyers reliable sourcing — all with transparency and efficiency.</p>
                 <div class="features">
                     <div class="feature">
                         <i class="fas fa-rocket"></i>
-                        <h3>Foren Markets</h3>
-                        <p>Get engage with forein markets.</p>
+                        <h3>Foreign Markets</h3>
+                        <p>Get engaged with foreign markets.</p>
                     </div>
                     <div class="feature">
                         <i class="fas fa-shield-alt"></i>
@@ -58,7 +78,7 @@
                     <div class="feature">
                         <i class="fas fa-thumbs-up"></i>
                         <h3>Trust</h3>
-                        <p>Build Bussines around the worldwide.</p>
+                        <p>Build business around the world.</p>
                     </div>
                 </div>
             </div>
@@ -81,7 +101,7 @@
                     <div class="service">
                         <i class="fas fa-chart-line"></i>
                         <h3>Digital Marketing</h3>
-                        <p>Strategies to grow your online business true forein markets.</p>
+                        <p>Strategies to grow your online business true foreign markets.</p>
                         <a href="#" class="btn">*</a>
                     </div>
                 </div>
@@ -118,7 +138,7 @@
                     <div class="about-text">
                         <p>Get yourself in international markets.</p>
                         <p>Easy and faster way to get prime materials and Logistics.</p>
-                        <h3>Comunication make things more easer to explore new Bussines:</h3>
+                        <h3>Comunication make things more easer to explore new Business:</h3>
                         <ul>
                             <li><i class="fas fa-check"></i> Quality</li>
                             <li><i class="fas fa-check"></i> Attention to both sides</li>
@@ -136,7 +156,7 @@
                         <h3>Contact us on email directly</h3>
                         <p><i class="fas fa-map-marker-alt"></i> Georgetown Guyana</p>
                         <p><i class="fas fa-phone"></i> /</p>
-                        <p><i class="fas fa-envelope"></i> alexteterte@gmail.com</p>
+                        <p><i class="fas fa-envelope"></i> altanticcanal@gmail.com</p>
                         <p><i class="fas fa-clock"></i> 24/7</p>
                         
                         <div class="social-links">
@@ -147,7 +167,7 @@
                         </div>
                     </div>
                     
-                    <form class="contact-form" action="https://formsubmit.co/alexteterte@gmail.com" method="POST">
+                    <form class="contact-form" action="https://formsubmit.co/altanticcanal@gmail.com" method="POST">
         <input type="hidden" name="_captcha" value="false">
                         <div class="form-group">
                             <label for="name">Name:</label>
@@ -175,7 +195,23 @@
     <footer>
         <div class="container">
             <p>&copy; 2025 Altantic Canal. All rights reserved.</p>
+            <label class="dark-toggle">
+                <input type="checkbox" id="darkModeToggle"> Dark mode
+            </label>
+
         </div>
     </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggle = document.getElementById('darkModeToggle');
+        if(toggle){
+            toggle.addEventListener('change', function(){
+                document.body.classList.toggle('dark', this.checked);
+            });
+        }
+    });
+    </script>
+
 </body>
 </html>
