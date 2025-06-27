@@ -62,18 +62,15 @@ header {
     background-color: white;
     box-shadow: var(--box-shadow);
     padding: 20px 0;
-    
+    position: sticky;
     top: 0;
     z-index: 1000;
-  position: static;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-  position: static;
 }
 
 header h1 {
@@ -358,10 +355,7 @@ footer {
     header .container {
         flex-direction: column;
         text-align: center;
-      align-items: center;
-
-  position: static;
-}
+    }
     
     .main-nav ul {
         margin-top: 15px;
@@ -400,20 +394,6 @@ footer {
 
 /* logo */
 .logo {
-    height: 500px;
+    height: 60px;
     display: block;
-}
-
-/* Final override to anchor logo and size */
-header .container {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
-  position: static !important;
-}
-
-.logo {
-  position: static !important;
-  height: 200px !important;
-  width: auto !important;
 }
