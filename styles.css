@@ -69,7 +69,11 @@ header {
 }
 
 header .container {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  position: static;
 }
 
 header h1 {
@@ -352,7 +356,11 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
     header .container {
-    position: relative;
+        flex-direction: column;
+        text-align: center;
+      align-items: center;
+
+  position: static;
 }
     
     .main-nav ul {
@@ -392,22 +400,19 @@ footer {
 
 /* logo */
 .logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
     height: 500px;
     display: block;
+}
 
-    /* Anchor header container to normal flow */
+/* Anchor header and logo override */
 header .container {
   position: relative;
 }
 
-/* Make logo 500 px tall and fix it in one spot */
 .logo {
   position: absolute;
   top: 20px;
   left: 20px;
   height: 500px;
-}
+  display: block;
 }
