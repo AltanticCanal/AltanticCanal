@@ -69,11 +69,7 @@ header {
 }
 
 header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-  position: static;
+    position: relative;
 }
 
 header h1 {
@@ -356,11 +352,7 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
     header .container {
-        flex-direction: column;
-        text-align: center;
-      align-items: center;
-
-  position: static;
+    position: relative;
 }
     
     .main-nav ul {
@@ -400,6 +392,9 @@ footer {
 
 /* logo */
 .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
     height: 500px;
     display: block;
 }
