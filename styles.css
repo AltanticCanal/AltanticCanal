@@ -69,7 +69,7 @@ header {
 
 header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -394,6 +394,6 @@ footer {
 
 /* logo */
 .logo {
-    height: 60px;
+    height: 80px;
     display: block;
 }
