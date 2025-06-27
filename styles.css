@@ -397,4 +397,17 @@ footer {
     left: 20px;
     height: 500px;
     display: block;
+
+    /* Anchor header container to normal flow */
+header .container {
+  position: relative;
+}
+
+/* Make logo 500 px tall and fix it in one spot */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 500px;
+}
 }
