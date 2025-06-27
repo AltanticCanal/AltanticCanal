@@ -62,15 +62,18 @@ header {
     background-color: white;
     box-shadow: var(--box-shadow);
     padding: 20px 0;
-    position: sticky;
+    
     top: 0;
     z-index: 1000;
+  position: static;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+  position: static;
 }
 
 header h1 {
@@ -355,7 +358,10 @@ footer {
     header .container {
         flex-direction: column;
         text-align: center;
-    }
+      align-items: center;
+
+  position: static;
+}
     
     .main-nav ul {
         margin-top: 15px;
@@ -394,22 +400,6 @@ footer {
 
 /* logo */
 .logo {
-    height: 60px;
+    height: 500px;
     display: block;
-}
-
-/* === OVERRIDE: center logo, header scrolls normally === */
-header .container {
-  position: static !important;     /* header scrolls with content */
-  display: flex !important;        /* horizontal layout */
-  align-items: center !important;  /* vertical centering */
-  justify-content: center !important; /* center items horizontally */
-  gap: 1rem !important;            /* space between logo and other items */
-}
-
-.logo, .logo img {
-  display: block !important;
-  height: 200px !important;        /* bigger logo */
-  width: auto !important;
-  margin: 0 !important;
 }
