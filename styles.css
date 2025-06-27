@@ -403,3 +403,19 @@ footer {
     height: 500px;
     display: block;
 }
+
+/* === OVERRIDE: Center logo, header scrolls with page === */
+header .container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  position: static !important;
+}
+
+.logo, .logo img {
+  display: block !important;
+  height: 500px !important;
+  width: auto !important;
+  margin: 0 auto !important; /* centers horizontally */
+}
