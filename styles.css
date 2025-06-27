@@ -391,3 +391,9 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* logo */
+.logo {
+    height: 60px;
+    display: block;
+}
