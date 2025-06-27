@@ -404,15 +404,16 @@ footer {
     display: block;
 }
 
-/* Anchor header and logo override */
+/* Final override to anchor logo and size */
 header .container {
-  position: relative;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  position: static !important;
 }
 
 .logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  height: 500px;
-  display: block;
+  position: static !important;
+  height: 200px !important;
+  width: auto !important;
 }
