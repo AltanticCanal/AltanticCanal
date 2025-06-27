@@ -419,3 +419,47 @@ header .container {
   width: auto !important;
   margin: 0 auto !important; /* centers horizontally */
 }
+
+
+/* DARK MODE PATCH */
+body.dark .tabs-system,
+body.dark .tab-content,
+body.dark .feature,
+body.dark .service,
+body.dark .product,
+body.dark .contact-info,
+body.dark .contact-form,
+body.dark .about-content,
+body.dark .about-text,
+body.dark .contact-container {
+    background-color: #1e1e1e !important;
+    color: #f5f5f5 !important;
+}
+
+body.dark .tabs-system label {
+    background-color: #2a2a2a !important;
+    border-color: #444 !important;
+    color: #f5f5f5 !important;
+}
+
+body.dark .tabs-system input[type="radio"]:checked + label {
+    background-color: #121212 !important;
+    border-bottom: 3px solid #81c2ff !important;
+    color: #81c2ff !important;
+}
+
+body.dark .btn {
+    background-color: #81c2ff !important;
+    color: #121212 !important;
+}
+
+body.dark .btn:hover {
+    background-color: #4a90e2 !important;
+}
+
+body.dark input,
+body.dark textarea {
+    background-color: #2a2a2a !important;
+    color: #f5f5f5 !important;
+    border: 1px solid #555 !important;
+}
