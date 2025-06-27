@@ -62,15 +62,18 @@ header {
     background-color: white;
     box-shadow: var(--box-shadow);
     padding: 20px 0;
-    position: sticky;
+    
     top: 0;
     z-index: 1000;
+  position: static;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+  position: static;
 }
 
 header h1 {
@@ -355,7 +358,10 @@ footer {
     header .container {
         flex-direction: column;
         text-align: center;
-    }
+      align-items: center;
+
+  position: static;
+}
     
     .main-nav ul {
         margin-top: 15px;
@@ -394,29 +400,6 @@ footer {
 
 /* logo */
 .logo {
-    height: 60px;
+    height: 500px;
     display: block;
-}
-
-/* === SIMPLE FIX OVERRIDES === */
-header, header .container {
-  display: flex !important;      /* keep items in a row */
-  align-items: center !important;/* vertical align */
-  justify-content: flex-start !important;
-  position: static !important;   /* header scrolls normally */
-}
-
-.logo, .logo img {
-  display: block !important;
-  height: 120px !important;      /* moderate size */
-  width: auto !important;
-  margin-right: 16px !important; /* gap before nav */
-  position: static !important;   /* in normal flow */
-}
-
-/* Ensure nav ul has no bullets */
-nav ul {
-  list-style: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
 }
