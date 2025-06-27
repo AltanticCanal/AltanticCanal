@@ -61,7 +61,7 @@ img {
 header {
     background-color: white;
     box-shadow: var(--box-shadow);
-    padding: 20px 0;
+    padding: 0px 0;
     
     top: 0;
     z-index: 1000;
@@ -400,7 +400,7 @@ footer {
 
 /* logo */
 .logo {
-    height: 100px;
+    height: 150px;
     display: block;
 }
 
@@ -415,7 +415,7 @@ header .container {
 
 .logo, .logo img {
   display: block !important;
-  height: 100px !important;
+  height: 150px !important;
   width: auto !important;
   margin: 0 auto !important; /* centers horizontally */
 }
