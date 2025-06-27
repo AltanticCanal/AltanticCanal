@@ -398,19 +398,18 @@ footer {
     display: block;
 }
 
-/* === CENTERED BIG LOGO (200px) & NON-STICKY HEADER === */
-header, header .container {
-  position: static !important;          /* header scrolls with page */
-  display: flex !important;
-  flex-direction: column !important;    /* logo on top, nav under (if nav is inside header) */
-  align-items: center !important;       /* center horizontally */
-  justify-content: center !important;   /* center vertically */
+/* === OVERRIDE: center logo, header scrolls normally === */
+header .container {
+  position: static !important;     /* header scrolls with content */
+  display: flex !important;        /* horizontal layout */
+  align-items: center !important;  /* vertical centering */
+  justify-content: center !important; /* center items horizontally */
+  gap: 1rem !important;            /* space between logo and other items */
 }
 
 .logo, .logo img {
-  position: static !important;          /* no absolute/fixed */
   display: block !important;
-  height: 200px !important;             /* bigger logo */
+  height: 200px !important;        /* bigger logo */
   width: auto !important;
-  margin: 0 auto !important;            /* center in flex column */
+  margin: 0 !important;
 }
