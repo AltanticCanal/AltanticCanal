@@ -72,6 +72,8 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+  position: static;
 }
 
 header h1 {
@@ -357,6 +359,8 @@ footer {
         flex-direction: column;
         text-align: center;
       align-items: center;
+
+  position: static;
 }
     
     .main-nav ul {
@@ -396,6 +400,6 @@ footer {
 
 /* logo */
 .logo {
-    height: 200px;
+    height: 500px;
     display: block;
 }
