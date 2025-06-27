@@ -398,18 +398,19 @@ footer {
     display: block;
 }
 
-/* === DARK MODE CARD FIX === */
-@media (prefers-color-scheme: dark) {
-  .feature {
-    background-color: #1b1b1b !important;
-    color: var(--light-color) !important;
-  }
+/* === CENTERED BIG LOGO (200px) & NON-STICKY HEADER === */
+header, header .container {
+  position: static !important;          /* header scrolls with page */
+  display: flex !important;
+  flex-direction: column !important;    /* logo on top, nav under (if nav is inside header) */
+  align-items: center !important;       /* center horizontally */
+  justify-content: center !important;   /* center vertically */
 }
 
-/* If a `.dark-mode` class is toggled on <body>, use that too */
-body.dark-mode .feature,
-html.dark-mode .feature,
-[data-theme="dark"] .feature {
-  background-color: #1b1b1b !important;
-  color: var(--light-color) !important;
+.logo, .logo img {
+  position: static !important;          /* no absolute/fixed */
+  display: block !important;
+  height: 200px !important;             /* bigger logo */
+  width: auto !important;
+  margin: 0 auto !important;            /* center in flex column */
 }
