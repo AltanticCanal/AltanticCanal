@@ -62,18 +62,15 @@ header {
     background-color: white;
     box-shadow: var(--box-shadow);
     padding: 20px 0;
-    
+    position: sticky;
     top: 0;
     z-index: 1000;
-  position: static;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-  position: static;
 }
 
 header h1 {
@@ -358,10 +355,7 @@ footer {
     header .container {
         flex-direction: column;
         text-align: center;
-      align-items: center;
-
-  position: static;
-}
+    }
     
     .main-nav ul {
         margin-top: 15px;
@@ -400,6 +394,22 @@ footer {
 
 /* logo */
 .logo {
-    height: 500px;
+    height: 60px;
     display: block;
+}
+
+/* === DARK MODE CARD FIX === */
+@media (prefers-color-scheme: dark) {
+  .feature {
+    background-color: #1b1b1b !important;
+    color: var(--light-color) !important;
+  }
+}
+
+/* If a `.dark-mode` class is toggled on <body>, use that too */
+body.dark-mode .feature,
+html.dark-mode .feature,
+[data-theme="dark"] .feature {
+  background-color: #1b1b1b !important;
+  color: var(--light-color) !important;
 }
