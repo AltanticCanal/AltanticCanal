@@ -62,9 +62,10 @@ header {
     background-color: white;
     box-shadow: var(--box-shadow);
     padding: 20px 0;
-    position: sticky;
+    
     top: 0;
     z-index: 1000;
+  position: static;
 }
 
 header .container {
@@ -395,6 +396,6 @@ footer {
 
 /* logo */
 .logo {
-    height: 80px;
+    height: 200px;
     display: block;
 }
